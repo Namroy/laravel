@@ -1,0 +1,39 @@
+
+
+*composer create-project laravel/laravel laravel 5.3
+*php artisan make:controller nameController
+*php artisan make:model <modelName>
+
+//esto cera el login
+*php artisan make:auth -> crea las vistas
+*php artisan migrate -> crear las tb
+
+
+
+  composer dump-autoload -o
+  php artisan cache:clear
+  php artisan route:clear
+
+
+--para istalar laravel colective
+
+editar dos archivos composer.json y config/app.php
+
+    En el archivo de composer: "laravelcollective/html":"^5.3.0"
+
+      'providers' => [
+    // ...
+    Collective\Html\HtmlServiceProvider::class,
+    // ...
+  ],
+
+
+    'aliases' => [
+    // ...
+      'Form' => Collective\Html\FormFacade::class,
+      'Html' => Collective\Html\HtmlFacade::class,
+    // ...
+  ],
+
+
+composer update;

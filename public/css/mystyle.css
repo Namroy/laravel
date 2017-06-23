@@ -1,0 +1,7 @@
+#wrap{width:550px;padding: 110px 30px; text-transform:none;}
+.lineheder{width:100%;height: 65px;position:absolute;left:0px;background:#337ab7;}
+.clear{clear:both;}
+h1{text-align:center !important; color:#FFF !important;}
+.panel-success{position:relative; top:50px;}
+#logo{position: relative; width: 145px;z-index:100;left: 35px;}
+.btn-login{top: 40px!important;position: relative;}
